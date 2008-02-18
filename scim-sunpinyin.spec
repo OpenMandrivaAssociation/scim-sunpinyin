@@ -1,7 +1,7 @@
 %define snapdate 20071231
 
 Name:		scim-sunpinyin
-Summary:	SunPinyin is a SLM (Statistical Language Model) based IME
+Summary:	SLM (Statistical Language Model) based IME
 Version:	1.0
 Release:	%mkrel -c %snapdate 3
 Group:		System/Internationalization
