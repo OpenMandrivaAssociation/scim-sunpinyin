@@ -1,9 +1,9 @@
-%define snapdate 20071231
+%define snapdate 20070507
 
 Name:		scim-sunpinyin
 Summary:	SLM (Statistical Language Model) based IME
 Version:	1.0
-Release:	%mkrel -c %snapdate 3
+Release:	%mkrel -c %snapdate 1
 Group:		System/Internationalization
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	CDDL and LGPLv2+
@@ -25,7 +25,7 @@ This packagae contains SunPinyin's scim wrapper.
 
 %prep
 %setup -q -n %name/sunpinyin/ime
-%patch0 -p0
+#%patch0 -p0
 
 %build
 ./autogen.sh
