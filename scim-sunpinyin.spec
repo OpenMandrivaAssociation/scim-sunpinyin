@@ -1,4 +1,4 @@
-%define snapdate 20080507
+%define snapdate 20080601
 
 Name:		scim-sunpinyin
 Summary:	SLM (Statistical Language Model) based IME
