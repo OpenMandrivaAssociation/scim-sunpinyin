@@ -14,6 +14,7 @@ URL:		http://www.opensolaris.org/os/project/input-method/
 # hg archive -t tbz2 scim-sunpinyin.tar.bz2
 Source0:	%{name}.tar.bz2
 Patch0:		scim-sunpinyin-linkage.patch
+Patch1:		scim-sunpinyin-str-fmt.patch
 Requires:		scim-client = %{scim_api}
 BuildRequires:		scim-devel >= 1.4.7
 
@@ -26,6 +27,7 @@ This packagae contains SunPinyin's scim wrapper.
 %prep
 %setup -q -n %name/sunpinyin/ime
 %patch0 -p0
+%patch1 -p0
 
 %build
 ./autogen.sh
