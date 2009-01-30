@@ -1,9 +1,9 @@
-%define snapdate 20080601
+%define snapdate 20090130
 
 Name:		scim-sunpinyin
 Summary:	SLM (Statistical Language Model) based IME
 Version:	1.0
-Release:	%mkrel -c %snapdate 3
+Release:	%mkrel -c %snapdate 1
 Group:		System/Internationalization
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	CDDL and LGPLv2+
