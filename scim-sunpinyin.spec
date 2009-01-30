@@ -25,7 +25,7 @@ This packagae contains SunPinyin's scim wrapper.
 
 %prep
 %setup -q -n %name/sunpinyin/ime
-%patch -p0
+%patch0 -p0
 
 %build
 ./autogen.sh
