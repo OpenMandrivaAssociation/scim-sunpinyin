@@ -3,7 +3,7 @@
 Name:		scim-sunpinyin
 Summary:	SLM (Statistical Language Model) based IME
 Version:	1.0
-Release:	%mkrel -c %snapdate 2
+Release:	%mkrel -c %snapdate 3
 Group:		System/Internationalization
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	CDDL and LGPLv2+
@@ -13,6 +13,7 @@ URL:		http://www.opensolaris.org/os/project/input-method/
 # cd inputmethod
 # hg archive -t tbz2 scim-sunpinyin.tar.bz2
 Source0:	%{name}.tar.bz2
+Patch0:		scim-sunpinyin-linkage.patch
 Requires:		scim-client = %{scim_api}
 BuildRequires:		scim-devel >= 1.4.7
 
@@ -24,6 +25,7 @@ This packagae contains SunPinyin's scim wrapper.
 
 %prep
 %setup -q -n %name/sunpinyin/ime
+%patch -p0
 
 %build
 ./autogen.sh
