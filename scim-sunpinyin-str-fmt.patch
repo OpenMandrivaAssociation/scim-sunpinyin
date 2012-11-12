@@ -1,0 +1,49 @@
+--- src/imi_context.cpp.str	2009-01-30 11:13:17.000000000 -0500
++++ src/imi_context.cpp	2009-01-30 11:14:03.000000000 -0500
+@@ -1468,7 +1468,7 @@
+ void
+ CBone::print(std::string& prefix)
+ {
+-    printf(prefix.c_str());
++    printf("%s",prefix.c_str());
+     printf("{Bone@%X:", this);
+     print_wide(m_String.c_str());
+     printf("}");
+@@ -1482,7 +1482,7 @@
+ void
+ CCandidate::print(std::string& prefix)
+ {
+-    printf(prefix.c_str());
++    printf("%s",prefix.c_str());
+     printf("<Candidate @%X:", this);
+     print_wide(m_String);
+     printf("-- %d}", m_WordId);
+--- src/lattice_states.cpp.str	2009-01-30 11:14:21.000000000 -0500
++++ src/lattice_states.cpp	2009-01-30 11:15:00.000000000 -0500
+@@ -45,7 +45,7 @@
+ void
+ CBoneInnerData::print(std::string& prefix)
+ {
+-    printf(prefix.c_str());
++    printf("%s",prefix.c_str());
+     printf("[BoneInnerData @%X]", this);
+     if (m_BWType != NoBestWordStartHere) {
+         printf((m_BWType == UserSelectedBestWord)?"U ":"B ");
+@@ -53,7 +53,7 @@
+         m_BestWord.print(nullstr);
+     }
+     printf("\n");
+-    printf(prefix.c_str());
++    printf("%s",prefix.c_str());
+     printf("[status list @%X]\n", &m_LatticeNodes);
+ 
+     prefix += "    ";
+@@ -71,7 +71,7 @@
+ void
+ TLatticeState::print(std::string& prefix)
+ {
+-    printf(prefix.c_str());
++    printf("%s",prefix.c_str());
+ #ifdef _USE_RAW_PROBABILITY
+     char valbuf[256];
+     m_Score.toString(valbuf);
