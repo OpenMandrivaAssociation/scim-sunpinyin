@@ -16,6 +16,11 @@ Source0:	%{name}.tar.bz2
 Patch0:		scim-sunpinyin-linkage.patch
 Patch1:		scim-sunpinyin-str-fmt.patch
 Requires:		scim-client = %{scim_api}
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:		scim-devel >= 1.4.7
 
 %description
