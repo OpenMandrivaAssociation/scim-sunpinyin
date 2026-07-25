@@ -3,7 +3,7 @@
 Name:		scim-sunpinyin
 Summary:	SLM (Statistical Language Model) based IME
 Version:	1.0
-Release:	%mkrel -c %snapdate 1
+Release:	-c %snapdate 1.1
 Group:		System/Internationalization
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	CDDL and LGPLv2+
